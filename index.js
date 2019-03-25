@@ -8,16 +8,16 @@ exports.init = (app, noctalysConf) => {
     express = app;
     noct_conf = noctalysConf;
 
-    conf.staticFiles = listFiles(conf.react_dir);
-    conf.staticDirs = listDirs(conf.react_dir);
+    noct_conf.staticFiles = listFiles(noct_conf.react_dir);
+    noct_conf.staticDirs = listDirs(noct_conf.react_dir);
 
-    conf.staticDirs.forEach((dir) => express.get(`/${dir}/*`, serveStaticDir(`/${conf.react_dir}/${dir}/`)))
-    conf.staticFiles.forEach((file) => express.get(`/${file}`, serveStaticFile(`/${conf.react_dir}/${file}`)))
+    noct_conf.staticDirs.forEach((dir) => express.get(`/${dir}/*`, serveStaticDir(`/${noct_conf.react_dir}/${dir}/`)))
+    noct_conf.staticFiles.forEach((file) => express.get(`/${file}`, serveStaticFile(`/${noct_conf.react_dir}/${file}`)))
 }
 
 exports.defaultRoute = () => {
     express.get('*', (req, res) => {
-        res.sendFile(path.join(noct_conf.root_dir + `/${conf.react_dir}/index.html`))
+        res.sendFile(path.join(noct_conf.root_dir + `/${noct_conf.react_dir}/index.html`))
     });
 }
 
@@ -54,8 +54,3 @@ var listFiles = (react_dir) => {
     });
     return res;
 }
-
-const conf = {
-    react_dir: 'client'
-}
-
