@@ -1,0 +1,11 @@
+{
+  "name": "noctalys",
+  "version": "0.3.0",
+  "description": "A light module to host React apps on an Express server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gallifray",
+  "license": "ISC"
+}
