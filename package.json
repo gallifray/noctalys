@@ -1,6 +1,6 @@
 {
   "name": "noctalys",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A light module to run single-page apps builds on an Express server.",
   "main": "index.js",
   "scripts": {
