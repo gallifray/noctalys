@@ -45,7 +45,7 @@ exports.init = (noctalysConf) => {
 exports.run = () => {
     noct_conf.staticDirs.forEach((dir) => express.get(`/${dir}/*`, serveStaticDir(`/${noct_conf.app_dir}/${dir}/`)))
     noct_conf.staticFiles.forEach((file) => express.get(`/${file}`, serveStaticFile(`/${noct_conf.app_dir}/${file}`)))
-    mylog(`[noctalys] ✅  Noctalys is running !`.green)
+    mylog(`[noctalys] ✅  Noctalys is running !`.green.bold)
 }
 
 exports.defaultRoute = () => {
