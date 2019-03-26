@@ -1,5 +1,30 @@
 # Noctalys
 
+### Basic example
+```javascript
+ const express = require('express');
+ const noctalys = require('noctalys');
+
+ const app = express();
+
+ noctalys.init({
+     app: app,
+     server_dir: __dirname,
+     app_dir: 'build',
+     entry_point: 'index.html',
+     exclude: ['service-worker.js'],    // OPTIONAL
+     logger: true                       // OPTIONAL
+ });
+
+ app.get('/api', (req, res) => {
+     res.json({
+         foo: "Welcome to the API!"
+     })
+ });
+
+ noctalys.listen();
+ app.listen(3000);
+```
 
 ## Why Noctalys ?
 In 2019, developping single-page applications is cool and easy.
@@ -13,6 +38,11 @@ The point of **Noctalys** is to serve a static build of your single-page app on 
 And all of this running on a single server port, and requiring minimal configuration.
 
 **Noctalys** automatically redirects requests that do not belong to your API to the entry-point of your application, and **it works perfectly with React Router !**
+<center>
+
+More on my website:
+[<img src="https://camo.githubusercontent.com/81b5458b507732586332451ed3fd507622b71901/68747470733a2f2f692e696d6775722e636f6d2f596f73666643492e706e67" width="300">](https://noctalys.gallifray.fr)
+</center>
 
 ## Installation
 Noctalys is a Node.js module available through the npm registry.
