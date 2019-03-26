@@ -9,6 +9,7 @@
   "author": "gallifray",
   "license": "ISC",
   "dependencies": {
-    "colors": "latest"
+    "colors": "latest",
+    "express": "latest"
   }
 }
