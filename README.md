@@ -1,5 +1,5 @@
 # Noctalys
-[![npm version](https://badge.fury.io/js/noctalys.svg)](https://badge.fury.io/js/noctalys)
+[![NPM](https://nodei.co/npm/noctalys.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/noctalys/)
 ### Basic example
 ```javascript
  const express = require('express');
