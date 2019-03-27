@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^4.16.4",
+    "noctalys": "^0.5.0"
+  }
+}
