@@ -1,7 +1,6 @@
-# Noctalys
-[![NPM](https://nodei.co/npm/noctalys.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/noctalys/)
+# Noctalys <img src="https://img.shields.io/npm/v/noctalys.svg" alt="npm" /> <img src="https://img.shields.io/npm/dm/noctalys.svg" alt="npm" />
 
-<img src="https://img.shields.io/npm/v/noctalys.svg" alt="npm" /> <img src="https://img.shields.io/npm/dm/noctalys.svg" alt="npm" />
+[![NPM](https://nodei.co/npm/noctalys.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/noctalys/)
 
 ### Basic example
 ```javascript
