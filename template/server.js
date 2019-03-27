@@ -8,7 +8,7 @@ noctalys.init({
     server_dir: __dirname,
     app_dir: 'build',
     entry_point: 'index.html',
-    exclude: ['service-worker.js', 'manifest.json'], // OPTIONAL
+    exclude: [], // OPTIONAL
     logger: true // OPTIONAL
 });
 
