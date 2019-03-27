@@ -1,5 +1,5 @@
 # Noctalys
-
+[![npm version](https://badge.fury.io/js/noctalys.svg)](https://badge.fury.io/js/noctalys)
 ### Basic example
 ```javascript
  const express = require('express');
